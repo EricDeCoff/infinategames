@@ -1,68 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Infinite Games</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
+      font-family: sans-serif;
       text-align: center;
+      padding: 2rem;
     }
-
     h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+      font-size: 3rem;
+      margin-bottom: 2rem;
     }
-
-    textarea {
+    .input-box {
       width: 100%;
-      max-width: 800px;
+      max-width: 700px;
       height: 300px;
-      font-size: 24px;
-      padding: 20px;
-      border: 2px solid #333;
+      font-size: 2rem;
+      padding: 1rem;
+      box-sizing: border-box;
+      margin: 0 auto 2rem;
+      border: 2px solid #ccc;
       border-radius: 10px;
-      resize: none;
     }
-
     .qr-container {
       display: flex;
       justify-content: center;
-      margin-top: 40px;
-      gap: 40px;
-      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 3rem;
     }
-
     .qr-item {
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-
     .qr-item img {
       width: 150px;
       height: 150px;
     }
-
-    .qr-label {
-      margin-top: 10px;
-      font-size: 18px;
+    .qr-item span {
+      margin-top: 0.5rem;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <h1>Infinite Games</h1>
-
-  <textarea placeholder="Type here..."></textarea>
+  <textarea class="input-box" placeholder="Enter your message here..."></textarea>
 
   <div class="qr-container">
     <div class="qr-item">
       <img src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https://play.google.com/store/apps/details?id=com.wizards.winter_orb&hl=en_US" alt="Google Play QR">
-      <div class="qr-label">Google Play</div>
+      <span>Google Play</span>
     </div>
     <div class="qr-item">
       <img src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https://apps.apple.com/us/app/magic-the-gathering-companion/id1455161962" alt="Apple App Store QR">
-      <div class="qr-label">Apple App Store</div>
+      <span>Apple App Store</span>
     </div>
   </div>
 </body>
